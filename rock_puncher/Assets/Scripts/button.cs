@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class button : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public float oomphToGive;
+    public float cost;
+    public DamageCollider dCollider;
     void Start()
     {
-        
+        dCollider= GameObject.Find("XR Rig Full Body").GetComponent<DamageCollider>(;)
+        oomphToGive=5.0f;
+        cost=10;
     }
-
-    // Update is called once per frame
-    void Update()
+    void OnCollisionEnter(Collider collision)
     {
-        
+        if(Collision.CompareTag("Player"))
+        {
+            Damage==Damage+oomphToGive;
+            cost+=5.0f;
+        }
     }
 }
