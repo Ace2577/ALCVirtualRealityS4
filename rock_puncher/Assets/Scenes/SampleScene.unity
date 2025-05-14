@@ -2550,6 +2550,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1328778849893280477, guid: 9f87e785e9ac9c14bb8dc5718f4378d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2024770000}
+    - targetCorrespondingSourceObject: {fileID: 1328778849893280477, guid: 9f87e785e9ac9c14bb8dc5718f4378d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2024770002}
     - targetCorrespondingSourceObject: {fileID: 7189358956270706805, guid: 9f87e785e9ac9c14bb8dc5718f4378d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2056744886}
@@ -5197,13 +5200,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 821cfb7c3eab3764bbb57d764c6e26d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 25
+  Damage: 50
   MinForce: 0.1
   UseRelativeVelocity: 0
   LastRelativeVelocity: 0
   LastDamageForce: 0
   TakeCollisionDamage: 0
   CollisionDamage: 5
+--- !u!114 &2024770002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024769999}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57b9620876f499b4b9cded1f843aaf3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &2038153589
 Mesh:
   m_ObjectHideFlags: 0
